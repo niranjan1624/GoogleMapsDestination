@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tracking_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <AutoCompleteTextView
+                android:id="@+id/dest_loc"
+                android:layout_width="match_parent"
+                android:hint="@string/enter_latlng"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/setDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dest_loc"
+                android:text="@string/set_destination"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>

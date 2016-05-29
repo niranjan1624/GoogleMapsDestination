@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MapIt</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="set_destination">Set Destination</string>
+    <string name="enter_latlng">Enter LatLng</string>
+    <string name="location_permssion_message">To show your loaction on Map app need your permission</string>
+    <string name="ok">Grant</string>
+</resources>
